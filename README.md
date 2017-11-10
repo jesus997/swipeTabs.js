@@ -1,6 +1,9 @@
 # swipeTabs.js
 Simple plugin to create responsive tabs using slick.js
 
+## Demo
+https://jesus997.github.io/swipeTabs.js/
+
 # How to use
 * Download or copy the contents of [swipeTabs.js](https://raw.githubusercontent.com/jesus997/swipeTabs.js/master/swipeTabs.js) or [swipeTabs.min.js](https://raw.githubusercontent.com/jesus997/swipeTabs.js/master/swipeTabs.min.js) in some js file of your project.
 * Add the swipeTabs.js link in your project: `<script src="path/to/swipeTabs.js"></script>`
