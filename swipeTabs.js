@@ -6,6 +6,10 @@
 (function($) {
 	'use strict';
 
+	$.fn.andFind = function(expr) {
+		return this.find(expr).add(this.filter(expr));
+	};
+
 	$.fn.swipeTabs = function(options) {
 		var defaultTabs = {
 			slidesToShow: 3,
@@ -56,7 +60,7 @@
 
 							settings.currentIndex = slick.getCurrent();
 							settings.swipeTabs.removeClass(settings.activeTabClassName);
-							$(settings.swipeTabs).find('[data-slick-index=' + settings.currentIndex + ']').addClass(settings.activeTabClassName);
+							$(settings.swipeTabs).andFind('[data-slick-index=' + settings.currentIndex + ']').addClass(settings.activeTabClassName);
 						});
 
 						settings.swipeTabsContainer.slick(settings.slick.tabs);
@@ -68,7 +72,7 @@
 							// gets index of clicked tab
 							settings.currentIndex = $(this).data('slick-index');
 							settings.swipeTabs.removeClass(settings.activeTabClassName);
-							$(settings.swipeTabs).find('[data-slick-index=' + settings.currentIndex +']').addClass(settings.activeTabClassName);
+							$(settings.swipeTabs).andFind('[data-slick-index=' + settings.currentIndex +']').addClass(settings.activeTabClassName);
 							settings.swipeTabsContainer.slick('slickGoTo', settings.currentIndex);
 							settings.swipeTabsContentContainer.slick('slickGoTo', settings.currentIndex);
 						});
@@ -77,7 +81,7 @@
 						settings.swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
 							settings.currentIndex = $(this).slick('slickCurrentSlide');
 							settings.swipeTabs.removeClass(settings.activeTabClassName);
-							$(settings.swipeTabs).find('[data-slick-index=' + settings.currentIndex + ']').addClass(settings.activeTabClassName);
+							$(settings.swipeTabs).andFind('[data-slick-index=' + settings.currentIndex + ']').addClass(settings.activeTabClassName);
 						});
 
 						return this;

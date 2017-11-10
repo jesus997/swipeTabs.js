@@ -1,33 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Simple plugin to create responsive tabs using slick.js">
+	<meta name="keyworks" content="swipe, tabs, responsive, slick, js">
+	<meta name="author" content="JessHilario">
+	<link rel="icon" href="https://cdn1.iconfinder.com/data/icons/realistiK-new/16x16/actions/tab_duplicate.png">
 	<title>swipeTabs.js | Simple swipe tabs plugin</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="swipeTabs.css" />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 </head>
 <body>
-	<h1>Example of swipeTabs.js</h1>
 
-	<div class="sub-header ">
-		<div class="swipe-tabs" data-for=".swipe-tabs-container">
-			<div class="swipe-tab">One</div>
-			<div class="swipe-tab">Two</div>
-			<div class="swipe-tab">Three</div>
-			<div class="swipe-tab">Four</div>
-			<div class="swipe-tab">Five</div>
-		</div>
-	</div>
-	<div class="main-container">
-		<div class="swipe-tabs-container">
-			<div class="swipe-tab-content">Tab 1</div>
-			<div class="swipe-tab-content">Tab 2</div>
-			<div class="swipe-tab-content">Tab 3</div>
-			<div class="swipe-tab-content">Tab 4</div>
-			<div class="swipe-tab-content">Tab 5</div>
-		</div>
-	</div>
+	<div class="container">
+		<header class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills float-right">
+					<li class="nav-item">
+						<a class="nav-link active" href="https://github.com/jesus997/swipeTabs.js/archive/master.zip">Download</a>
+					</li>
+				</ul>
+			</nav>
+			<h3 class="text-muted">swipeTabs.js</h3>
+		</header>
 
-	<h4>Credits: <a href="https://codepen.io/gbhasha/pen/gaggRR">Galeel Bhasha</a></h4>
+		<main role="main">
+
+			<div class="jumbotron">
+				<h1>Create sliding tabs quickly and easily.</h1>
+				<p class="m-0">You need <a href="http://kenwheeler.github.io/slick/">slick.js</a> and <a href="https://jquery.com">jQuery</a>.</p>
+			</div>
+
+			<div class="row marketing">
+				<div class="col-lg-12">
+					<h4>Example</h4>
+					
+					<div class="sub-header">
+						<div class="swipe-tabs" data-for=".swipe-tabs-container">
+							<div class="swipe-tab">One</div>
+							<div class="swipe-tab">Two</div>
+							<div class="swipe-tab">Three</div>
+							<div class="swipe-tab">Four</div>
+							<div class="swipe-tab">Five</div>
+						</div>
+					</div>
+					<div class="main-container">
+						<div class="swipe-tabs-container">
+							<div class="swipe-tab-content">Tab 1</div>
+							<div class="swipe-tab-content">Tab 2</div>
+							<div class="swipe-tab-content">Tab 3</div>
+							<div class="swipe-tab-content">Tab 4</div>
+							<div class="swipe-tab-content">Tab 5</div>
+						</div>
+					</div>
+
+					<h4 class="mt-4">HTML</h4>
+					<textarea class="form-control" rows="16"><div class="sub-header">
+	<div class="swipe-tabs" data-for=".swipe-tabs-container">
+		<div class="swipe-tab">One</div>
+		<div class="swipe-tab">Two</div>
+		<div class="swipe-tab">Three</div>
+		<div class="swipe-tab">Four</div>
+		<div class="swipe-tab">Five</div>
+	</div>
+</div>
+<div class="main-container">
+	<div class="swipe-tabs-container">
+		<div class="swipe-tab-content">Tab 1</div>
+		<div class="swipe-tab-content">Tab 2</div>
+		<div class="swipe-tab-content">Tab 3</div>
+		<div class="swipe-tab-content">Tab 4</div>
+		<div class="swipe-tab-content">Tab 5</div>
+	</div>
+</div></textarea>
+	
+					<h4 class="mt-4">JS</h4>
+					<textarea class="form-control" rows="10"> $('.swipe-tabs').swipeTabs({
+	slick: {
+		tabs: {
+			centerMode: true
+		},
+		content: {
+			draggable: true,
+			fade: true,
+			cssEase: 'linear'
+		}
+	}
+});</textarea>
+				</div>
+			</div>
+			<h5>Credits: <a href="https://codepen.io/gbhasha/pen/gaggRR">Galeel Bhasha</a></h5>
+		</main>
+
+		<footer class="footer">
+		<p>&copy; <a href="https://github.com/jesus997">Jesús Magallón</a> | Codeking with love for all.</p>
+		</footer>
+
+	</div> <!-- /container -->
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
