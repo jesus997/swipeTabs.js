@@ -1,0 +1,29 @@
+{
+  "name": "swipetabs",
+  "version": "1.0.0",
+  "description": "Simple plugin to create responsive tabs using slick.js",
+  "main": "swipeTabs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus997/swipeTabs.js.git"
+  },
+  "keywords": [
+    "swipe",
+    "tabs",
+    "responsive",
+    "slick"
+  ],
+  "author": "JessHilario <magallonj23@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "bugs": {
+    "url": "https://github.com/jesus997/swipeTabs.js/issues"
+  },
+  "peerDependencies": {
+    "jquery": ">=1.8.0",
+    "slick-carousel": ">=1.8.1"
+  },
+  "homepage": "https://github.com/jesus997/swipeTabs.js#readme"
+}

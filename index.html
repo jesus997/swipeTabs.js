@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swipeTabs.js | Simple swipe tabs plugin</title>
+	<link rel="stylesheet" href="swipeTabs.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+</head>
+<body>
+	<h1>Example of swipeTabs.js</h1>
+
+	<div class="sub-header ">
+		<div class="swipe-tabs" data-for=".swipe-tabs-container">
+			<div class="swipe-tab">One</div>
+			<div class="swipe-tab">Two</div>
+			<div class="swipe-tab">Three</div>
+			<div class="swipe-tab">Four</div>
+			<div class="swipe-tab">Five</div>
+		</div>
+	</div>
+	<div class="main-container">
+		<div class="swipe-tabs-container">
+			<div class="swipe-tab-content">Tab 1</div>
+			<div class="swipe-tab-content">Tab 2</div>
+			<div class="swipe-tab-content">Tab 3</div>
+			<div class="swipe-tab-content">Tab 4</div>
+			<div class="swipe-tab-content">Tab 5</div>
+		</div>
+	</div>
+
+	<h4>Credits: <a href="https://codepen.io/gbhasha/pen/gaggRR">Galeel Bhasha</a></h4>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+	<script src="swipeTabs.js"></script>
+	<script type="text/javascript">
+		$('.swipe-tabs').swipeTabs({
+			slick: {
+				tabs: {
+					centerMode: true
+				},
+				content: {
+					draggable: true,
+					fade: true,
+					cssEase: 'linear'
+				}
+			}
+		});
+	</script>
+</body>
+</html>
