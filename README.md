@@ -68,4 +68,4 @@ slick | ``{tabs:{},content:{}}`` | Configuration object for the two slick-carous
 - [ ] Make this fly.
 
 # Credits and mentions
-This plugin was completely based on the [codepen created by Galeel Bhasha](https://codepen.io/gbhasha/pen/gaggRR). My only job here was to convert your code into a plugin for jQuery.
+This plugin was completely based on the [codepen created by Galeel Bhasha](https://codepen.io/gbhasha/pen/gaggRR).
